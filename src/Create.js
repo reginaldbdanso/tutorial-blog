@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import { db } from './index.js';
+import { collection, addDoc } from 'firebase/firestore';
 
 const Create = () => {
     const [title, setTitle] = useState('');
@@ -13,16 +15,19 @@ const Create = () => {
         const blog = { title, body, author };
         setIsPending(true);
 
-
-        fetch('http://localhost:8000/blogs', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(blog)
-        }).then(() => {
-            console.log('New blog added');
-            setIsPending(false);
-            navigate('/')
+        addDoc(collection(db, "blogs"), blog).then((docRef) => {
+            console.log("Document successfully added!");
+            navigate('/');
         })
+        // fetch('http://localhost:8000/blogs', {
+        //     method: 'POST',
+        //     headers: { 'Content-Type': 'application/json' },
+        //     body: JSON.stringify(blog)
+        // }).then(() => {
+        //     console.log('New blog added');
+        //     setIsPending(false);
+        //     navigate('/')
+        // })
     }
     return (
         <div className="create">
@@ -42,13 +47,12 @@ const Create = () => {
                     onChange={(e) => setBody(e.target.value)}
                 ></textarea>
                 <label>Blog author</label>
-                <select
+                <input
+                    type=""
+                    required
                     value={author}
                     onChange={(e) => setAuthor(e.target.value)}
-                >
-                    <option value="mario">mario</option>
-                    <option value="yoshi">yoshi</option>
-                </select>
+                />
                 {!isPending && <button>Add Blog</button>}
                 {isPending && <button disabled>Adding Blog</button>}
                 
