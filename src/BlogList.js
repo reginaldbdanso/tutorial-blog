@@ -5,7 +5,8 @@ const BlogList = ({ blogs, title }) => {
     return (
         <div className="blog-list">
             <h1>{title}</h1>
-            {noBlogs && <p>No Blogs Added. Create a ne blog</p>}
+            {/* This is to display a message when there are no blogs in the database */}
+            {noBlogs && <p>No Blogs Added. Create a new blog</p>}
             {blogs.map((blog) => (
                     <div className="blog-preview" key={blog.id}>
                         <Link to={`/blogs/${blog.id}`}>
