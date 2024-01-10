@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import useFetch from './useFetch';
 import { useNavigate } from 'react-router-dom';
 import { doc, deleteDoc } from 'firebase/firestore';
-import { db } from './index.js';
+import { db } from './Firebase';
 
 const BlogDetails = () => {
     const { id } = useParams();

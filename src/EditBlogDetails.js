@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { doc, updateDoc } from 'firebase/firestore';
-import { db } from './index.js';
+import { db } from './Firebase';
 
 const EditBlogDetails = () => {
     const { id } = useParams();

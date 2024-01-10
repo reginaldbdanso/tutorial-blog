@@ -157,3 +157,168 @@ code {
   border-radius: 8px;
   cursor: pointer;
 }
+
+/* Card styles */
+.card {
+  background-color: #e6eef8;
+  border-radius: 16px;
+  height: 349px;
+  position: relative;
+  width: 300px;
+}
+
+.card .text-wrapper {
+  color: var(--bluegrey-600);
+  font-family: "IBM Plex Mono-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  left: 87px;
+  letter-spacing: 1px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 23px;
+}
+
+.card .button-active-instance {
+  left: 94px !important;
+  position: absolute !important;
+  top: 213px !important;
+  width: 113px !important;
+}
+
+.card .design-component-instance-node {
+  left: 28px !important;
+}
+
+.card .social-buttons {
+  height: 48px;
+  left: 54px;
+  position: absolute;
+  top: 69px;
+  width: 192px;
+}
+
+.card .button-social {
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 100%);
+  border-radius: 16px;
+  box-shadow: 1px 1px 2px #bbc3ce99, -1px -1px 2px #fdffffcc;
+  height: 48px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 48px;
+}
+
+.card .icon-facebook-wrapper {
+  background-color: #e6eef8;
+  border-radius: 15px;
+  box-shadow: inset -3px -3px 4px #fdffff99, inset 3px 3px 4px #bbc3ce99;
+  height: 46px;
+  left: 1px;
+  position: relative;
+  top: 1px;
+  width: 46px;
+}
+
+.card .icon-facebook {
+  height: 24px !important;
+  left: 11px !important;
+  position: absolute !important;
+  top: 11px !important;
+  width: 24px !important;
+}
+
+.card .icon-twitter-wrapper {
+  background-color: #e6eef8;
+  border-radius: 16px;
+  box-shadow: 4px 4px 12px #bbc3ce99, -4px -4px 12px #fdffffcc;
+  height: 48px;
+  left: 72px;
+  position: absolute;
+  top: 0;
+  width: 48px;
+}
+
+.card .icon-instance-node {
+  height: 24px !important;
+  left: 12px !important;
+  position: absolute !important;
+  top: 12px !important;
+  width: 24px !important;
+}
+
+.card .icon-google-wrapper {
+  background-color: #e6eef8;
+  border-radius: 16px;
+  box-shadow: 4px 4px 12px #bbc3ce99, -4px -4px 12px #fdffffcc;
+  height: 48px;
+  left: 144px;
+  position: absolute;
+  top: 0;
+  width: 48px;
+}
+
+.card .password-input {
+  height: 48px;
+  left: 24px;
+  position: absolute;
+  top: 141px;
+  width: 252px;
+}
+
+.card .overlap {
+  height: 48px;
+  position: relative;
+}
+
+.card .input-inset-instance {
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.card .icon-hide {
+  height: 16px !important;
+  left: 220px !important;
+  position: absolute !important;
+  top: 16px !important;
+  width: 16px !important;
+}
+
+.card .div {
+  color: var(--bluegrey-600);
+  font-family: "IBM Plex Mono-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 62px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 284px;
+}
+
+.card .text-wrapper-2 {
+  color: var(--bluegrey-600);
+  font-family: "IBM Plex Mono-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 72px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 308px;
+}
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This makes the container take up the full height of the viewport */
+  background: url('./back3.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+}
+
+.logbut {
+  padding-top: 60px;
+}

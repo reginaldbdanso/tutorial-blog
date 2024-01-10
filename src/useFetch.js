@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { db } from './index.js';
+import { db } from './Firebase';
 import { collection, getDocs, getDoc, doc } from 'firebase/firestore';
 
 const useFetch = (id=null) => {
