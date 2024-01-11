@@ -2,7 +2,7 @@ import { auth } from "./Firebase";
 import * as firebaseui from "firebaseui";
 import "firebaseui/dist/firebaseui.css";
 import { EmailAuthProvider, GoogleAuthProvider } from "firebase/auth";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 
 

@@ -1,7 +1,7 @@
 function WithoutNavbar({ component: Component }) {
     return (
-    <div><
-        Component />;
+    <div>
+        <Component />;
     </div>
     );
 }

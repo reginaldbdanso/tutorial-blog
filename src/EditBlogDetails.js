@@ -74,15 +74,7 @@ const EditBlogDetails = () => {
                     onChange={(e) => setBody(e.target.value)}
                 ></textarea>
                 <label>Blog author</label>
-                {/* <select
-                    placeholder={blog.author}
-                    value={author}
-                    onChange={(e) => setAuthor(e.target.value)}
-                >
-                    <option value="mario">mario</option>
-                    <option value="yoshi">yoshi</option>
-                    <option value="peach">peach</option>
-                </select> */}
+                
                 <input
                     type=""
                     required

@@ -9,6 +9,7 @@ const BlogDetails = () => {
     const { data: blog, error, isPending } = useFetch(id);
     // console.log(blog);
     const navigate = useNavigate();
+    
     const handleDelete = () => {
         const docRef = doc(db, "blogs", id);
         deleteDoc(docRef).then(() => {

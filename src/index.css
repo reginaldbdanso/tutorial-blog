@@ -317,6 +317,7 @@ code {
   align-items: center;
   height: 100vh; /* This makes the container take up the full height of the viewport */
   background: url('./back3.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover;
 }
 
 .logbut {

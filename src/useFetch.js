@@ -17,6 +17,7 @@ const useFetch = (id=null) => {
       querySnapshot.then((querySnapshot) => {
         // console.log(querySnapshot.docs.forEach(doc => console.log(doc.data())))
         const blogs = querySnapshot.docs.map(doc => {
+         
           return { ...doc.data(), id: doc.id }
         });
         // console.log(blogs);
